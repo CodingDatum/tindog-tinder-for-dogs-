@@ -19,7 +19,7 @@ p{
 
 /************************************** CLASSES *************************************/
 .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 5%;
 }
 .navbar{
     padding: 0 0 4.5rem 0;
@@ -48,7 +48,9 @@ p{
 }
 
 .title-image{
-    width: 60%;
+    width: 20%;
+    position: absolute;
+    right: 23%;
 }
 .features-icon{
     /*font-size:3rem; see instead adding the class fa-4x or fa-5x etc to these icons */
@@ -81,9 +83,11 @@ p{
 }
 #features{
     padding: 7% 15%;
+    background-color:white;
+    position: relative;
+    z-index:1;
 }
 #testimonials{
-    padding: 7% 15%;
     background-color: #ef8172;
     color: white;
     text-align: center;
@@ -92,4 +96,43 @@ p{
     background-color: #ef8172;
     text-align: center;
     padding-bottom: 3%;
+}
+.carousel-item{
+    padding: 7% 15%;
+}
+#pricing{
+    padding: 100px;
+    text-align:center;
+}
+.prices{
+    padding: 3% 2%;
+}
+#cta {
+    text-align:center;
+    color:white;
+    background-color: #ff4c68;
+    padding: 5% 10% 2%;
+    line-height: 1.5;
+}
+.button-space{
+    margin: 3% 2%;
+}
+#footer{
+    text-align: center;
+}
+.social-media{
+    margin: 10px 5px 0;
+}
+
+/******************** MEDIA BREAKPOINT CHANGES *********************/
+
+@media (max-width: 1028px){
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 300px;
+    }
+    #title{
+        text-align: center;
+    }
 }
